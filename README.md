@@ -10,11 +10,11 @@ Oh, and a bonus feature. Tap the number in the watch app to view the 20 most rec
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-![alt text](https://assets.materialup.com/uploads/be67e670-2b2a-4827-b825-0d9c60e2c7eb/attachment.jpg)
+![who's in space?](https://assets.materialup.com/uploads/be67e670-2b2a-4827-b825-0d9c60e2c7eb/attachment.jpg)
 
-![alt text](https://assets.materialup.com/uploads/69fa6547-bd0d-4285-b625-d81d0b823852/attachment.jpg)
+![who's in space?](https://assets.materialup.com/uploads/69fa6547-bd0d-4285-b625-d81d0b823852/attachment.jpg)
 
-![alt text](https://assets.materialup.com/uploads/408512e0-34ba-42d8-85d8-67d2c406d81a/attachment.jpg)
+![who's in space?](https://assets.materialup.com/uploads/408512e0-34ba-42d8-85d8-67d2c406d81a/attachment.jpg)
 
 
 ### Prerequisites
