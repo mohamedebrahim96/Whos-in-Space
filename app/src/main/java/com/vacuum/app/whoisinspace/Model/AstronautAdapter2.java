@@ -94,7 +94,9 @@ public class AstronautAdapter2  {
                             Poster b1=new Poster(position,replacedString);
                             poster.add(b1);
 
-                            Glide.with(context.getApplicationContext()).load(replacedString).apply(RequestOptions.circleCropTransform()).into(((ViewHolder) viewHolder).image);
+                            Glide.with(context.getApplicationContext()).load(replacedString)
+                                    .apply(RequestOptions.circleCropTransform())
+                                    .into(((ViewHolder) viewHolder).image);
 
 
                             Log.d("replacedString", "Number of title: " + replacedString);
