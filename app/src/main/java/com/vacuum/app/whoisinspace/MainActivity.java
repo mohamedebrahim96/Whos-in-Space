@@ -3,6 +3,7 @@ package com.vacuum.app.whoisinspace;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -32,19 +33,24 @@ import io.codetail.animation.ViewAnimationUtils;
 
 public class MainActivity extends AppCompatActivity  implements ViewAnimator.ViewAnimatorListener{
 
-    String url  = "http://api.open-notify.org/astros.json";
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private List<SlideMenuItem> list = new ArrayList<>();
     private ViewAnimator viewAnimator;
     private LinearLayout linearLayout;
-    private FragmentOne fragmentOne;
+    View view;
+    private final String TAG_HOME = "home";
+    private final String TAG_CLOSE = "close";
+    private final String TAG_NOTIFICATIONS = "notifications";
+    private final String TAG_SETTINGS = "settings";
+    private final String TAG_ABOUT = "about";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragmentOne = FragmentOne.newInstance();
+        FragmentOne fragmentOne = FragmentOne.newInstance();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, fragmentOne)
                 .commit();
@@ -58,22 +64,21 @@ public class MainActivity extends AppCompatActivity  implements ViewAnimator.Vie
             }
         });
 
-
         setActionBar();
         createMenuList();
         viewAnimator = new ViewAnimator<>(this, list, fragmentOne, drawerLayout, this);
 
     }
     private void createMenuList() {
-        SlideMenuItem menuItem = new SlideMenuItem("close", R.drawable.icn_close);
+        SlideMenuItem menuItem = new SlideMenuItem(TAG_CLOSE, R.drawable.icn_close);
         list.add(menuItem);
-        SlideMenuItem menuItem1 = new SlideMenuItem("one", R.drawable.home_vector);
+        SlideMenuItem menuItem1 = new SlideMenuItem(TAG_HOME, R.drawable.home_vector);
         list.add(menuItem1);
-        SlideMenuItem menuItem2 = new SlideMenuItem("two", R.drawable.if_misc__message_1276855);
+        SlideMenuItem menuItem2 = new SlideMenuItem(TAG_NOTIFICATIONS, R.drawable.if_misc__message_1276855);
         list.add(menuItem2);
-        SlideMenuItem menuItem3 = new SlideMenuItem("three", R.drawable.configuration);
+        SlideMenuItem menuItem3 = new SlideMenuItem(TAG_SETTINGS, R.drawable.configuration);
         list.add(menuItem3);
-        SlideMenuItem menuItem4 = new SlideMenuItem("about", R.drawable.if_misc__alert_1276878);
+        SlideMenuItem menuItem4 = new SlideMenuItem(TAG_ABOUT, R.drawable.if_misc__alert_1276878);
         list.add(menuItem4);
     }
 
@@ -159,39 +164,36 @@ public class MainActivity extends AppCompatActivity  implements ViewAnimator.Vie
     }
 
     private ScreenShotable replaceFragment(Resourceble slideMenuItem,ScreenShotable screenShotable, int topPosition) {
-        View view = findViewById(R.id.content_frame);
+        view = findViewById(R.id.content_frame);
         int finalRadius = Math.max(view.getWidth(), view.getHeight());
         SupportAnimator animator = ViewAnimationUtils.createCircularReveal(view, 0, topPosition, 0, finalRadius);
         animator.setInterpolator(new AccelerateInterpolator());
         animator.setDuration(ViewAnimator.CIRCULAR_REVEAL_ANIMATION_DURATION);
         findViewById(R.id.content_overlay).setBackgroundDrawable(new BitmapDrawable(getResources(), screenShotable.getBitmap()));
         animator.start();
-
+        Fragment fragment = null;
         switch (slideMenuItem.getName()){
-            case "one":
-                FragmentOne fragmentOne  = FragmentOne.newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragmentOne ).commit();
-                break;
-            case "two":
-                FragmentTwo fragmentTwo = FragmentTwo .newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragmentTwo ).commit();
-                break;
-            case "three":
-                FragmentThree threeFragment = FragmentThree .newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, threeFragment ).commit();
-                break;
-            case "about":
-                AboutFragment aboutFragment = AboutFragment.newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, aboutFragment).commit();
-                break;
+            case TAG_HOME:
+                fragment  = FragmentOne.newInstance();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment ).commit();
+                return (ScreenShotable) fragment;
+            case TAG_NOTIFICATIONS:
+                fragment = FragmentTwo .newInstance();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment ).commit();
+                return (ScreenShotable) fragment;
+            case TAG_SETTINGS:
+                fragment= FragmentThree .newInstance();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment ).commit();
+                return (ScreenShotable) fragment;
+            case TAG_ABOUT:
+                fragment = AboutFragment.newInstance();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
+                return (ScreenShotable) fragment;
             default:
                 break;
-
         }
-        return fragmentOne;
+        return (ScreenShotable) fragment;
     }
-
-
 
 
     @Override

@@ -27,9 +27,14 @@ public class FragmentThree extends Fragment implements ScreenShotable {
     private View Fragmentone_view;
     private Bitmap bitmap;
 
-    public static FragmentThree newInstance() {
+    /*public static FragmentThree newInstance() {
         FragmentThree fragmentOne = new FragmentThree();
         return fragmentOne;
+    }*/
+
+    public static FragmentThree newInstance() {
+        FragmentThree fragmentThree = new FragmentThree();
+        return fragmentThree;
     }
 
     @Override
