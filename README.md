@@ -7,6 +7,12 @@ Want to learn more? Simply tap an astronaut's name!
 who' in space? is now available just by glancing at your watch. Get notifications and quickly see how many people are in space at any time. 
 Oh, and a bonus feature. Tap the number in the watch app to view the 20 most recent images from the feed!
 
+
+[![Available on the App Store](badge.svg)](https://itunes.apple.com/us/app/whos-in-space/id916499517)
+[![Available on the Google Play](en_get.svg)](https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace)
+
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
