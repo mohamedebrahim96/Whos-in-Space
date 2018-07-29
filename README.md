@@ -1,4 +1,5 @@
 # Whos-in-Space
+[![Build Status](https://travis-ci.org/hypertrack/hypertrack-live-android.svg?branch=master)](https://travis-ci.org/hypertrack/hypertrack-live-android) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4fad0c93fd3749d690571a7a728ce047)](https://www.codacy.com/app/piyushguptaece/hypertrack-live-android?utm_source=github.com&utm_medium=referral&utm_content=hypertrack/hypertrack-live-android&utm_campaign=badger) [![Slack Status](http://slack.hypertrack.com/badge.svg)](http://slack.hypertrack.com) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-HyperTrack%20Live-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/5754) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/licenses/MIT) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Ever wondered who's in space?
 
@@ -8,14 +9,14 @@ who' in space? is now available just by glancing at your watch. Get notification
 Oh, and a bonus feature. Tap the number in the watch app to view the 20 most recent images from the feed!
 
 
-[![Available on the App Store](badge.svg)](https://itunes.apple.com/us/app/whos-in-space/id916499517)
-
+[![Available on the App Store](badge.svg)](https://itunes.apple.com/us/app/whos-in-space/id916499517) 
 <a href="https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace">
-<img alt="Get it on Google Play" src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" width="250" />
+<img alt="Get it on Google Play" src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" width="150" />
 </a>
 
 ==============================================================
-[![Available on the Google Play](en_get.svg)](https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace)
+
+
 
 
 
