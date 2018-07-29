@@ -13,6 +13,8 @@ Oh, and a bonus feature. Tap the number in the watch app to view the 20 most rec
 <a href="https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace">
 <img alt="Get it on Google Play" src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" width="250" />
 </a>
+
+==============================================================
 [![Available on the Google Play](en_get.svg)](https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace)
 
 
