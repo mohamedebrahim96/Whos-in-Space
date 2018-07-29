@@ -20,9 +20,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 ![dfh](https://user-images.githubusercontent.com/16405013/29244160-a3cd7e1e-7fb1-11e7-93c1-32c09f3e3532.jpg)
 
-![who's in space?](https://assets.materialup.com/uploads/408512e0-34ba-42d8-85d8-67d2c406d81a/attachment.jpg)
-
-
 ### Prerequisites
 
 What things you need to install the software and how to install them
