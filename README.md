@@ -12,7 +12,7 @@ Oh, and a bonus feature. Tap the number in the watch app to view the 20 most rec
 <a href="https://itunes.apple.com/us/app/whos-in-space/id916499517">
 <img alt="Get it on App Store" src="badge.svg" width="150" />
 </a>  <a href="https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace">
-<img alt="Get it on Google Play" src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" width="150" />
+<img alt="Get it on Google Play" src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" width="190" />
 </a>
 
 ==============================================================
