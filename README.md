@@ -9,8 +9,9 @@ who' in space? is now available just by glancing at your watch. Get notification
 Oh, and a bonus feature. Tap the number in the watch app to view the 20 most recent images from the feed!
 
 
-[![Available on the App Store](badge.svg)](https://itunes.apple.com/us/app/whos-in-space/id916499517) 
-<a href="https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace">
+<a href="https://itunes.apple.com/us/app/whos-in-space/id916499517">
+<img alt="Get it on App Store" src="badge.svg" width="150" />
+</a>  <a href="https://play.google.com/store/apps/details?id=com.vacuum.app.whoisinspace">
 <img alt="Get it on Google Play" src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" width="150" />
 </a>
 
